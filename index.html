@@ -31,16 +31,17 @@
             <div class="side-profile-money">$27,903</div>
 
             <div class="income-spending-container">
-                <div class="up-arrow"><i class="fas fa-arrow-up"></i></div>
                 <div class="income">
-                    <div>Income</div>
+                    <div class="up-arrow"><i class="fas fa-arrow-up"></i></div>
+                    <div style="margin-right: 5px;">Income</div>
                     <div>$32,500</div>
                 </div>
                 <div class="spending">
-                    <div>Spending</div>
+                    <div style="margin-right: 5px;">Spending</div>
                     <div>$10,120</div>
+                    <div class="down-arrow"><i class="fas fa-arrow-down"></i></div>
                 </div>
-                <div class="down-arrow"><i class="fas fa-arrow-down"></i></div>
+               
             </div>
 
             <div class="credit-card-1">
@@ -54,7 +55,7 @@
             <div class="main-total">
                 <h3 class="savings-total">Savings Total</h3>
                 <div class="main-total-inner-container">
-                    <div class="main-total_money">$280,520</div>
+                    <div class="main-total_money"><span>$</span></div>
                     <div class="main-total_percentage"><i style="margin-right: 2px;" class="fas fa-caret-up"></i>15%</div>
                 </div>
             </div>
@@ -92,21 +93,37 @@
                     </div>
                 </div>
                 <div class="car-savings">
-                        <div>
-                                <div class="home-savings_50">23%</div>
-                                <div class="home-savings-text">Savings For New Car</div>
-                                <div style="color: #a5a5a5;" class="home-savings-text">Lorem Ipsum dolor...</div>
-                            </div>
-                            <div>
-                                    <i class="home-savings-icon fab fa-angellist"></i>
-                            </div>
+                    <div>
+                        <div class="home-savings_50">23%</div>
+                        <div class="home-savings-text">Savings For New Car</div>
+                        <div style="color: #a5a5a5;" class="home-savings-text">Lorem Ipsum dolor...</div>
+                    </div>
+                    <div>
+                        <i class="home-savings-icon fab fa-angellist"></i>
+                    </div>
                 </div>
+            </div>
+
+            <div class="graphs">
+                <div class="graphs_left-container">
+                    <div>Money History</div>
+                    <canvas id="myChart" width="400" height="400"></canvas>
+                </div>
+                <div class="graphs_right-container">
+                    <div>Sallary Target</div>
+                    <canvas id="myChart2" width="400" height="400"></canvas>
+                </div>
+            </div>
+
+            <div class="last-container">
+                <h1>Ridel Services</h1>
+                <i style="font-size: 60px;" class="fab fa-acquisitions-incorporated"></i>
             </div>
 
         </div>
     </div>
 
-
+<script src="./node_modules/.staging/chart.js-b3a36e03/dist/Chart.js"></script>
 <script src="app.js"></script>
 </body>
 
