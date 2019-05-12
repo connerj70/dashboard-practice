@@ -1,0 +1,239 @@
+:root {
+    --m-blue: #022F40;
+    --m-purple: #38AECC;
+    --m-brown: #0090C1;
+    --m-pink: #395B50;
+    --m-white: #046E8F;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 85px 20% auto;
+    width: 100%;
+    height: 100%;
+    margin: 0 0;
+}
+
+.side-header {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background: var(--m-white);
+    height: 100vh;
+}
+
+.logo-container {
+    background: var(--m-purple);
+    width: 100%;
+    height: 70px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container i {
+    color: white;
+    font-size: 30px;
+}
+
+.side-header_icons-container {
+    list-style: none;
+}
+
+.side-header_icons-container div {
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.side-header_icons-container div i {
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background: var(--m-blue);
+    height: 100vh;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.profile-pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px dashed white;
+    padding: 10px;
+}
+
+.sidebar-profile-name {
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-top: 15px;
+}
+
+.side-profile-money {
+    color: white;
+    font-size: 24px;
+    margin-top: 16px;
+}
+
+.income-spending-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.up-arrow {
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+
+.down-arrow {
+    margin-left: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+
+.income {
+    margin-right: 20px;
+    border-right: 1px solid white;
+    padding-right: 20px;
+}
+
+.spending {
+    margin-left: 20px;
+    border-left: 1px solid white;
+    padding-left: 20px;
+}
+
+.credit-card-image {
+    width: 90%;
+    margin-top: 30px;
+}
+
+.main {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background: white;
+    height: 100vh;
+    display:flex;
+    padding-left: 40px;
+    padding-top: 40px;
+    text-align: left;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    justify-items: left;
+}
+
+.savings-total {
+    font-size: 14px;
+    color: #a7a7a7;
+}
+
+.main-total-inner-container {
+    display: flex;
+    align-content: center;
+    justify-content: left;
+    justify-items: left;
+    align-items: center;
+}
+
+.main-total_money {
+    margin-right: 10px;
+    font-size: 26px;
+}
+
+.main-total_percentage {
+    background: var(--m-purple);
+    color: white;
+    padding: 2px 6px;
+    box-sizing: border-box;
+    font-size: 12px;
+    border-radius: 3px;
+    height: 20px;
+}
+
+.time-frame-container {
+    display: flex;
+    margin-top: 15px;
+}
+
+.time-frame {
+    margin-right: 10px;
+    text-align: center;
+}
+
+.time-frame h3 {
+    font-size: 14px;
+    color: #a7a7a7;
+}
+
+.time-frame_plus {
+    margin-right: 5px;
+}
+
+.colored-section-container {
+    display: flex;
+}
+
+.home-savings {
+    background: var(--m-white);
+    padding: 20px;
+    color: white;
+    width: 50%;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 250px;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+.home-savings_50 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.home-savings-text {
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.home-savings-icon {
+    font-size: 60px;
+}
+
+.car-savings {
+    background: var(--m-brown);
+    padding: 15px;
+    color: white;
+    width: 50%;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 250px;
+    margin-top: 30px;
+}
