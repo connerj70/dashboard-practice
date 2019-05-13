@@ -172,6 +172,26 @@ body {
     color: #a7a7a7;
 }
 
+.update-savings {
+    display:flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.update-savings label {
+    margin-bottom: 5px;
+}
+
+.update-savings button {
+    margin-top: 5px;
+    background: var(--m-purple);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
 .main-total-inner-container {
     display: flex;
     align-content: center;

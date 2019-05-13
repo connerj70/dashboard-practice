@@ -77,3 +77,9 @@ savingsTotal.splice(3,0,",");
 savingsTotal = savingsTotal.join("");
 console.log(savingsTotal);
 savingsContainer.append(savingsTotal);
+
+function updateSavings() {
+    var newValue = document.querySelector("#new-savings-value").value
+    savingsTotal = newValue;
+    savingsContainer.innerHTML = "$" + savingsTotal;
+}
